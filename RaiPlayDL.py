@@ -65,9 +65,9 @@ class Raipodcast():
                 filename = re.sub(r'(?u)[^-\w.]', '', filename)                   
                 elementID = elementID + 1
                 print ("Download \"" + singletitle + "\" (" + mp3 + ")")
-                ##self.getFile(mp3, "tmp/" + filename + ".mp3")
+                #if "Sinfonian.7" in singletitle: #This is in case, for some reason, you need only 1 file
+                #    self.getFile(mp3, "tmp/" + singletitle + ".mp3")
                 self.getFile(mp3, "tmp/" + singletitle + ".mp3")
-
 
         print ("Done!\nFiles saved in ./tmp/ --> Move them or they will be removed next time you run this code.")
         
